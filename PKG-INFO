@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Cuckoo
+Version: 2.0.0
+Summary: Automated Malware Analysis System
+Home-page: https://cuckoosandbox.org/
+Author: Stichting Cuckoo Foundation
+Author-email: cuckoo@cuckoofoundation.org
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Flask
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Security
