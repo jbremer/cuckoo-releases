@@ -406,7 +406,6 @@ cuckoo/web/dashboard/views.py
 cuckoo/web/static/favicon-32x32.png
 cuckoo/web/static/favicon-64x64.png
 cuckoo/web/static/css/analysis_sidebar.css
-cuckoo/web/static/css/lightbox.css
 cuckoo/web/static/css/main.css
 cuckoo/web/static/css/vendor.css
 cuckoo/web/static/fonts/FontAwesome.otf
@@ -453,7 +452,6 @@ cuckoo/web/static/js/cuckoo/filetree.js
 cuckoo/web/static/js/cuckoo/loader.js
 cuckoo/web/static/js/cuckoo/recent.js
 cuckoo/web/static/js/cuckoo/submission.js
-cuckoo/web/static/js/misc/lightbox.js
 cuckoo/web/submission/__init__.py
 cuckoo/web/submission/urls.py
 cuckoo/web/templates/base.html
