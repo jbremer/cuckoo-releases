@@ -365,13 +365,12 @@ cuckoo/reporting/notification.py
 cuckoo/reporting/singlefile.py
 cuckoo/web/.gitignore
 cuckoo/web/__init__.py
+cuckoo/web/utils.py
 cuckoo/web/analysis/__init__.py
 cuckoo/web/analysis/urls.py
 cuckoo/web/analysis/views.py
 cuckoo/web/analysis/templatetags/__init__.py
 cuckoo/web/analysis/templatetags/analysis_tags.py
-cuckoo/web/bin/__init__.py
-cuckoo/web/bin/utils.py
 cuckoo/web/controllers/__init__.py
 cuckoo/web/controllers/analysis/__init__.py
 cuckoo/web/controllers/analysis/analysis.py
