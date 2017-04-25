@@ -26,14 +26,14 @@ wakeonlan==0.2.2
 m2crypto==0.24.0
 
 [:sys_platform == 'darwin']
-requests==2.7.0
+requests==2.13.0
 
 [:sys_platform == 'linux2']
-requests[security]==2.7.0
+requests[security]==2.13.0
 scapy==2.3.2
 
 [:sys_platform == 'win32']
-requests==2.7.0
+requests==2.13.0
 
 [distributed]
 gevent==1.1.1
