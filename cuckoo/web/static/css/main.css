@@ -3118,11 +3118,12 @@ body[id^="submission/"] {
 body[id="submission/pre"] footer:not(.flex-grid__footer),
 body[id="submission/pre"] #footer-extra,
 body[id="submission/index"] footer:not(.flex-grid__footer),
-body[id="submission/index"] #footer-extra,
+body[id="submission/index"] #footer-extra, x
 body[id="submission/post"] footer:not(.flex-grid__footer),
+x
 body[id="submission/post"] #footer-extra,
-body[id^="analysis"]:not([id="#analysis.views.pending"]) footer:not(.flex-grid__footer),
-body[id^="analysis"]:not([id="#analysis.views.pending"]) #footer-extra {
+body[id^="analysis"]:not([id="analysis.views.pending"]):not([id="analysis.views.search"]):not([id="analysis/recent"]):not([id="analysis/import"]) footer:not(.flex-grid__footer),
+body[id^="analysis"]:not([id="analysis.views.pending"]):not([id="analysis.views.search"]):not([id="analysis/recent"]):not([id="analysis/import"]) #footer-extra {
   display: none;
 }
 
@@ -4677,11 +4678,27 @@ body.night .dndupload__v2 {
 .upload-module__container {
   width: 325px;
 }
+.upload-module__body {
+  width: 650px;
+  margin-left: -160px;
+}
+.upload-module__body--left {
+  width: 335px;
+  float: left;
+}
+.upload-module__body--right {
+  float: right;
+  margin-top: 131px;
+}
 .upload-module h3 {
   color: #B0B0B0;
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 15px;
+}
+.upload-module .allowed-file-types {
+  width: 300px;
+  padding-left: 30px;
 }
 .upload-module .allowed-file-types h4 {
   font-weight: 400;
@@ -6524,7 +6541,7 @@ body.night .flex-tabs__tab .btn:not(.active):hover, body.night .flex-tabs__tab--
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 50px);
   font-family: "Roboto", sans-serif;
 }
 .flex-grid.include-footer, .include-footer.flex-grid__horizontal, .include-footer.flex-grid__horizontal--grow {
