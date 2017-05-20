@@ -125,7 +125,7 @@ def do_setup(**kwargs):
 
 do_setup(
     name="Cuckoo",
-    version="2.0.3a4",
+    version="2.0.3a5",
     author="Stichting Cuckoo Foundation",
     author_email="cuckoo@cuckoofoundation.org",
     packages=[
@@ -183,7 +183,7 @@ do_setup(
         "pymongo==3.0.3",
         "python-dateutil==2.4.2",
         "python-magic==0.4.12",
-        "sflock>=0.2.9, <0.3",
+        "sflock>=0.2.12, <0.3",
         "sqlalchemy==1.0.8",
         "wakeonlan==0.2.2",
     ] + install_requires,
