@@ -17,7 +17,7 @@ from cuckoo.apps import (
     fetch_community, submit_tasks, process_tasks, process_task_range,
     cuckoo_rooter, cuckoo_api, cuckoo_distributed, cuckoo_distributed_instance,
     cuckoo_clean, cuckoo_dnsserve, cuckoo_machine, import_cuckoo,
-    migrate_database
+    migrate_database, migrate_cwd
 )
 from cuckoo.common.config import read_kv_conf
 from cuckoo.common.exceptions import CuckooCriticalError
@@ -101,19 +101,19 @@ def cuckoo_init(level, ctx, cfg=None):
             "along the correct directory?"
         )
 
-    # Determine if any CWD updates are required.
-    current = open(cwd(".cwd"), "rb").read()
-    latest = open(cwd(".cwd", private=True), "rb").read()
-    if current != latest:
-        pass
+    init_console_logging(level)
 
     check_configs()
     check_version()
 
-    if ctx.log:
-        init_logging(level)
-    else:
-        init_console_logging(level)
+    ctx.log and init_logging(level)
+
+    # Determine if any CWD updates are required and if so, do them.
+    current = open(cwd(".cwd"), "rb").read().strip()
+    latest = open(cwd(".cwd", private=True), "rb").read().strip()
+    if current != latest:
+        migrate_cwd()
+        open(cwd(".cwd"), "wb").write(latest)
 
     Database().connect()
 

@@ -63,6 +63,7 @@ cuckoo/data/gatherer.py
 cuckoo/data/mitm.py
 cuckoo/data-private/.cwd
 cuckoo/data-private/guids.txt
+cuckoo/data-private/cwd/hashes.txt
 cuckoo/data-private/cwd/init-post.jinja2
 cuckoo/data-private/cwd/init-pre.jinja2
 cuckoo/data-private/cwd/supervisord.jinja2
@@ -136,8 +137,6 @@ cuckoo/data-private/win32/regex2.dll
 cuckoo/data-private/win32/zlib1.dll
 cuckoo/data/agent/agent.py
 cuckoo/data/agent/agent.sh
-cuckoo/data/analyzer/__init__.py
-cuckoo/data/analyzer/android/__init__.py
 cuckoo/data/analyzer/android/analyzer.py
 cuckoo/data/analyzer/android/config/hooks.json
 cuckoo/data/analyzer/android/lib/__init__.py
@@ -160,7 +159,6 @@ cuckoo/data/analyzer/android/modules/auxiliary/screenshots.py
 cuckoo/data/analyzer/android/modules/packages/__init__.py
 cuckoo/data/analyzer/android/modules/packages/apk.py
 cuckoo/data/analyzer/android/modules/packages/default_browser.py
-cuckoo/data/analyzer/darwin/__init__.py
 cuckoo/data/analyzer/darwin/analyzer.py
 cuckoo/data/analyzer/darwin/lib/__init__.py
 cuckoo/data/analyzer/darwin/lib/api/screenshot.py
